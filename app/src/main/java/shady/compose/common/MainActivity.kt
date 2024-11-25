@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import cafe.adriel.voyager.navigator.Navigator
+import compose.common.ratingbar.RatingBar
 import shady.compose.common.screens.MainScreen
 import shady.compose.common.ui.theme.SampleTheme
 

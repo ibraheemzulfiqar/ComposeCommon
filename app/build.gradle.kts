@@ -52,8 +52,9 @@ dependencies {
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    implementation(projects.pattern)
-//    implementation("com.github.ibraheemzulfiqar:ComposeCommon:v0.2.0")
+//    implementation(projects.pattern)
+    implementation("com.github.ibraheemzulfiqar.ComposeCommon:pattern:v0.3.0")
+    implementation("com.github.ibraheemzulfiqar.ComposeCommon:ratingbar:v0.3.0")
 
     implementation("cafe.adriel.voyager:voyager-navigator:1.1.0-beta03")
 
