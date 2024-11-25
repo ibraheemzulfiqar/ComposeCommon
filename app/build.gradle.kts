@@ -31,8 +31,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -53,6 +53,7 @@ dependencies {
 //    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     implementation(projects.pattern)
+//    implementation("com.github.ibraheemzulfiqar:ComposeCommon:v0.1.0")
 
     implementation("cafe.adriel.voyager:voyager-navigator:1.1.0-beta03")
 
