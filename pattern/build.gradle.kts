@@ -5,6 +5,8 @@ plugins {
     id("maven-publish")
 }
 
+group = "com.github.ibraheemzulfiqar"
+
 android {
     namespace = "compose.common.pattern"
     compileSdk = 34
