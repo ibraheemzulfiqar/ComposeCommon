@@ -24,3 +24,4 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "ComposeCommon"
 include(":app")
 include(":pattern")
+include(":ratingbar")

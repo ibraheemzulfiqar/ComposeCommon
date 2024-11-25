@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "compose.common.pattern"
+    namespace = "compose.common.ratingbar"
     compileSdk = 34
 
     defaultConfig {
