@@ -35,7 +35,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         compose = true
@@ -53,7 +53,7 @@ dependencies {
 //    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     implementation(projects.pattern)
-//    implementation("com.github.ibraheemzulfiqar:ComposeCommon:v0.1.0")
+//    implementation("com.github.ibraheemzulfiqar:ComposeCommon:v0.2.0")
 
     implementation("cafe.adriel.voyager:voyager-navigator:1.1.0-beta03")
 
