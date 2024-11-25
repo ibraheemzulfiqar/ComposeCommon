@@ -27,3 +27,4 @@ rootProject.name = "ComposeCommon"
 include(":app")
 include(":pattern")
 include(":ratingbar")
+include(":voyager-extensions")

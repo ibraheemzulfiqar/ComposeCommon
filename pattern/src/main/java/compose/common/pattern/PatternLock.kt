@@ -79,6 +79,7 @@ fun <T : Any> PatternLock(
     val dotSizePx = with(density) { dotSize.toPx() }
     val selectedDotSizePx = with(density) { selectedDotSize.toPx() }
     val linesStrokePx = with(density) { lineStroke.toPx() }
+    // TODO : Update
     val touchArea = dotSizePx + extraTouchPx
     val cells = cellCount - 1
 
@@ -94,6 +95,7 @@ fun <T : Any> PatternLock(
     val dots by remember {
         derivedStateOf { getDotsPositionedEvenly(cells, size, selectedDotSizePx) }
     }
+    // TODO : Create one instance and update params via side effect
     val inputHandler by remember {
         derivedStateOf { PatternInputHandler(touchArea, dots) }
     }

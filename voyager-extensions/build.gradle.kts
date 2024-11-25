@@ -1,12 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.compose.compiler)
     id("maven-publish")
 }
 
 android {
-    namespace = "compose.common.pattern"
+    namespace = "compose.common.voyager"
     compileSdk = 34
 
     defaultConfig {
@@ -40,7 +39,7 @@ android {
 dependencies {
 
     implementation(libs.compose.runtime)
-    implementation(libs.compose.material3)
+    implementation(libs.voyager.navigator)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
