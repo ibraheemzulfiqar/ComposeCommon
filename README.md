@@ -37,3 +37,50 @@ implementation("com.github.ibraheemzulfiqar.ComposeCommon:voyager-extensions:v0.
 ```
 
 [![Jitpack](https://jitpack.io/v/ibraheemzulfiqar/ComposeCommon.svg)](https://jitpack.io/#ibraheemzulfiqar/ComposeCommon)
+
+##
+
+#  Examples
+1. [Rating Bar](#ratingbar)
+2. [Pattern Lock](#patternlock)
+3. [Voyager Extensions](#voyager-extensions)
+
+## Ratingbar
+
+```kotlin
+    var rating by remember { mutableFloatStateOf(0f) }
+    val starOutline = painterResource(R.drawable.ic_star_outline)
+    val starOutlineLast = painterResource(R.drawable.ic_star_outline_last)
+    val star = painterResource(R.drawable.ic_star)
+
+    RatingBar(
+        value = rating,
+        onValueChange = { rating = it },
+        painterFilled = { star },
+        painterEmpty = { index ->
+            if (index == 5) starOutlineLast else starOutline
+        },
+        onRatingChanged = {
+            rating = it
+        },
+        spaceBetween = 12.dp,
+        numOfStars = 5,
+        tint = Color.Yellow,
+        hideInactiveStars = false,
+        stepSize = StepSize.ONE, // StepSize.HALF
+        isIndicator = false,
+        size = 32.dp,
+    )
+```
+
+## PatternLock
+
+```kotlin
+// sample code
+```
+
+## Voyager Extensions
+
+```kotlin
+// sample code
+```
